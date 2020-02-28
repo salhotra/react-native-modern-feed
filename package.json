@@ -1,8 +1,24 @@
 {
   "name": "react-native-modern-feed",
   "version": "1.0.0",
-  "description": "Elegant and simple list for beautiful content feed.",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "homepage": "https://github.com/salhotra/react-native-modern-feed",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salhotra/react-native-modern-feed"
+  },
+  "description": "An elegant UI component for content feed.",
+  "keywords": [
+    "react-native",
+    "ios",
+    "android",
+    "expo",
+    "feed",
+    "list"
+  ],
+  "author": "Nishant Salhotra",
+  "license": "MIT",
   "scripts": {
     "build": "yarn lint && tsc --outDir lib",
     "format": "prettier --write './src/**/*.tsx'",
@@ -11,12 +27,7 @@
     "check:lint": "tsc --noEmit && yarn lint",
     "release": "yarn check:lint && yarn build && npm publish"
   },
-  "keywords": [
-    "react-native"
-  ],
-  "author": "Nishant Salhotra",
-  "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "@types/react": "^16.9.23",
     "@types/react-native": "^0.61.17",
     "prettier": "^1.19.1",
